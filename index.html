@@ -5,120 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página</title>
     <style>
-        /* Estilos adicionales en una etiqueta <style> dentro del <head> */
-        .resaltado {
-            color: red;
-            font-weight: bold;
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
-     <!-- Título de la página -->
-     <h1>Bienvenido a <span class="resaltado">Mi Primera Página</span></h1>
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Primera Página</h1>
+    </header>
 
-     <!-- Párrafo de texto -->
-     <p>Esta es mi <span class="resaltado">primera página web</span>. Estoy emocionado de aprender HTML y construir sitios increíbles.</p>
- 
-    <!-- Lista desordenada -->
-    <ul>
-        <li><a href="#elemento1">Elemento 1</a></li>
-        <li><a href="#elemento2">Elemento 2</a></li>
-        <li><a href="#elemento3">Elemento 3</a></li>
-    </ul>
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <!-- Lista ordenada -->
-    <ol>
-        <li><a href="#paso1">Paso 1</a></li>
-        <li><a href="#paso2">Paso 2</a></li>
-        <li><a href="#paso3">Paso 3</a></li>
-    </ol>
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección 1 -->
+        <section id="inicio">
+            <h2>¡Bienvenido a Mi Primera Página!</h2>
+            <p>Esta es una página de ejemplo para practicar HTML5.</p>
+        </section>
 
-    <!-- Imagen -->
-    <div style="text-align: center;">
-        <img src="https://ejemplo.com/tu-imagen.jpg" alt="Descripción de la imagen" style="width: 300px; border: 2px solid #ccc;">
-    </div>
+        <!-- Sección 2 -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo apasionado por aprender y compartir conocimientos en el mundo web.</p>
+        </section>
 
-   <!-- Formulario -->
-   <form action="/procesar-formulario" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+        <!-- Sección 3 -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Diseño Web</li>
+                <li>Desarrollo Front-end</li>
+                <li>Desarrollo Back-end</li>
+            </ul>
+        </section>
 
-    <br>
+        <!-- Sección 4 -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de nuestro formulario de contacto.</p>
+        </section>
+    </main>
 
-    <label for="correo">Correo electrónico:</label>
-    <input type="text" id="correo" name="correo" required>
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Mi Primera Página</p>
+    </footer>
 
-    <br>
-
-    <label>Género:</label>
-    <input type="radio" id="masculino" name="genero" value="masculino" checked>
-    <label for="masculino">Masculino</label>
-
-    <input type="radio" id="femenino" name="genero" value="femenino">
-    <label for="femenino">Femenino</label>
-
-    <br>
-
-    <label for="intereses">Intereses:</label>
-    <select id="intereses" name="intereses">
-        <option value="programacion">Programación</option>
-        <option value="diseno">Diseño</option>
-        <option value="musica">Música</option>
-    </select>
-
-    <br>
-
-    <input type="checkbox" id="suscripcion" name="suscripcion" checked>
-    <label for="suscripcion">Suscribirse al boletín</label>
-
-    <br>
-
-    <input type="submit" value="Enviar">
-</form>
-
-    <!-- Contenido adicional de tu página va aquí -->
-    
-    <!-- Enlace interno -->
-    <h2 id="elemento1">Elemento 1</h2>
-    <p>Contenido del Elemento 1.</p>
-
-    <!-- Enlace interno -->
-    <h2 id="elemento2">Elemento 2</h2>
-    <p>Contenido del Elemento 2.</p>
-
-    <!-- Enlace interno -->
-    <h2 id="elemento3">Elemento 3</h2>
-    <p>Contenido del Elemento 3.</p>
-
-    <!-- Enlace interno -->
-    <h2 id="paso1">Paso 1</h2>
-    <p>Contenido del Paso 1.</p>
-
-    <!-- Enlace interno -->
-    <h2 id="paso2">Paso 2</h2>
-    <p>Contenido del Paso 2.</p>
-
-    <!-- Enlace interno -->
-    <h2 id="paso3">Paso 3</h2>
-    <p>Contenido del Paso 3.</p>
-
-    <table border="1">
-        <tr>
-            <td>Fila 1, Columna 1</td>
-            <td>Fila 1, Columna 2</td>
-            <td>Fila 1, Columna 3</td>
-        </tr>
-        <tr>
-            <td>Fila 2, Columna 1</td>
-            <td>Fila 2, Columna 2</td>
-            <td>Fila 2, Columna 3</td>
-        </tr>
-        <tr>
-            <td>Fila 3, Columna 1</td>
-            <td>Fila 3, Columna 2</td>
-            <td>Fila 3, Columna 3</td>
-        </tr>
-    </table>
 </body>
 </html>
