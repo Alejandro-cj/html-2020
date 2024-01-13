@@ -50,3 +50,28 @@ a:hover {
     color: red;
 }
 
+/* Estilos para la sección de servicios */
+#servicios {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para las cajas de servicios */
+#servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicios li {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Estilos para las secciones de inicio y sobre nosotros */
+#inicio,
+#sobre-nosotros {
+    max-width: 800px;
+    margin: 0 auto;
+}
