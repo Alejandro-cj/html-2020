@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página</title>
+    <style>
+        /* Estilos adicionales en una etiqueta <style> dentro del <head> */
+        .resaltado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Título de la página -->
-    <h1>Bienvenido a Mi Primera Página</h1>
+     <!-- Título de la página -->
+     <h1>Bienvenido a <span class="resaltado">Mi Primera Página</span></h1>
 
-    <!-- Párrafo de texto -->
-    <p>Esta es mi primera página web. Estoy emocionado de aprender HTML y construir sitios increíbles.</p>
-
+     <!-- Párrafo de texto -->
+     <p>Esta es mi <span class="resaltado">primera página web</span>. Estoy emocionado de aprender HTML y construir sitios increíbles.</p>
+ 
     <!-- Lista desordenada -->
     <ul>
         <li><a href="#elemento1">Elemento 1</a></li>
@@ -31,7 +38,7 @@
     <div style="text-align: center;">
         <img src="https://ejemplo.com/tu-imagen.jpg" alt="Descripción de la imagen" style="width: 300px; border: 2px solid #ccc;">
     </div>
-    
+
    <!-- Formulario -->
    <form action="/procesar-formulario" method="post">
     <label for="nombre">Nombre:</label>
