@@ -30,25 +30,43 @@
     <!-- Imagen -->
     <img src="https://ejemplo.com/tu-imagen.jpg" alt="Descripción de la imagen">
 
-    <!-- Formulario -->
-    <form action="/procesar-formulario" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+   <!-- Formulario -->
+   <form action="/procesar-formulario" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-        <br>
+    <br>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="text" id="correo" name="correo" required>
+    <label for="correo">Correo electrónico:</label>
+    <input type="text" id="correo" name="correo" required>
 
-        <br>
+    <br>
 
-        <input type="checkbox" id="suscripcion" name="suscripcion" checked>
-        <label for="suscripcion">Suscribirse al boletín</label>
+    <label>Género:</label>
+    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+    <label for="masculino">Masculino</label>
 
-        <br>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
 
-        <input type="submit" value="Enviar">
-    </form>
+    <br>
+
+    <label for="intereses">Intereses:</label>
+    <select id="intereses" name="intereses">
+        <option value="programacion">Programación</option>
+        <option value="diseno">Diseño</option>
+        <option value="musica">Música</option>
+    </select>
+
+    <br>
+
+    <input type="checkbox" id="suscripcion" name="suscripcion" checked>
+    <label for="suscripcion">Suscribirse al boletín</label>
+
+    <br>
+
+    <input type="submit" value="Enviar">
+</form>
 
     <!-- Contenido adicional de tu página va aquí -->
     
